@@ -7,6 +7,13 @@ Command-line program to interact with Cin7.
 Download the version for your platform on the [releases page](https://github.com/ScreenStaring/cin7-cli/releases).
 Windows, macOS/OS X, and GNU/Linux are supported.
 
+### Using [Homebrew](https://brew.sh/)
+
+```
+brew tap screenstaring/tap
+brew install cin7-cli
+```
+
 ## Usage
 
 The CLI interface uses the executable `cin7`. Not everything exposed by the Cin7 API is supported:

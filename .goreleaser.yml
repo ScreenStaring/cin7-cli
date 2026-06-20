@@ -1,0 +1,31 @@
+version: 2
+
+project_name: cin7-cli
+
+builds:
+  - binary: cin7
+    env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+      - windows
+      - darwin
+
+snapshot:
+  version_template: "{{ .Tag }}-next"
+
+changelog:
+  disable: true
+
+brews:
+  - name: cin7-cli
+    homepage: "https://github.com/ScreenStaring/cin7-cli"
+    description: "Command-line program to interact with Cin7"
+    license: "MIT"
+    repository:
+      owner: ScreenStaring
+      name: homebrew-tap
+    directory: Formula
+    commit_author:
+      name: screenstaring-bot
+      email: 224665351+screenstaring-bot@users.noreply.github.com
